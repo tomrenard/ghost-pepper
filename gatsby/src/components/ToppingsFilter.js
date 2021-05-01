@@ -3,13 +3,15 @@ import {useStaticQuery, graphql } from 'gatsby';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 
-const ToppingStyled = styled.div`
+const ToppingStyles = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
   margin-bottom: 4rem;
   a {
     display: grid;
+    text-decoration: none;
+    font-size: clamp(1.5rem, 1.5vw, 2,5rem);
     padding: 5px;
     grid-template-columns: auto 1fr;
     grid-gap: 0 1rem;
@@ -69,7 +71,7 @@ export default function ToppingsFilter(props) {
   `);
   const toppingsWithCounts = countPizzaInToppings(pizzas.nodes);
   return (
-    <ToppingStyled>
+    <ToppingStyles>
     <Link to='/pizzas'>
       <span className="name">All</span>
       <span className="count">{pizzas.nodes.length}</span>
@@ -80,6 +82,6 @@ export default function ToppingsFilter(props) {
           <span className="count">{topping.count}</span>
         </Link>
       )}
-    </ToppingStyled>
+    </ToppingStyles>
   );
 }

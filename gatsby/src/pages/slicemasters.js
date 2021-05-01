@@ -10,7 +10,7 @@ const SliceMastersGridStyles = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 2rem;
-  border: 1rem solid red;
+  padding: 1rem;
 `;
 
 const SingleSliceMasterGridStyles = styled.div`
@@ -20,7 +20,6 @@ const SingleSliceMasterGridStyles = styled.div`
   .gatsby-image-wrapper {
     height: 400px;
   }
-  border: 1rem solid lightgreen;
   h2 {
     transform: rotate(-2deg);
     text-align: center;

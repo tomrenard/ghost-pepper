@@ -7,14 +7,12 @@ const PizzaGridStyles = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   gap: 4rem;
-  border: solid red;
   grid-auto-rows: auto auto 500px;
 `;
 
 const PizzaStyles = styled.div`
   display: grid;
   align-items: center;
-  border: solid black;
   @supports not (grid-template-rows: subgrid) {
     --rows: auto auto 1fr;
   }

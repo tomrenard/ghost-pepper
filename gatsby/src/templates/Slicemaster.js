@@ -6,12 +6,8 @@ import SEO from '../components/SEO';
 
 const SingleMasterStyles = styled.div`
   display: grid;
-  border: 1rem solid red;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-gap: 2rem;
-  div {
-    border: 1rem solid black;
-  }
 `;
 
 export default function SingleSlicemasterPage({ data: { slicemaster } }) {
