@@ -87,10 +87,10 @@ export default function Nav() {
           <Link to="/"><Logo /></Link>
         </li>
         <li>
-          <Link to="/slicemasters">SlicesMasters</Link>
+          <Link to="/slicemasters">Ghost Masters</Link>
         </li>
         <li>
-          <Link to="/order">Order yo!</Link>
+          <Link to="/order">Order here!</Link>
         </li>
       </ul>
     </NavStyles>

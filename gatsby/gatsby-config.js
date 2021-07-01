@@ -4,8 +4,8 @@ dotenv.config({ path: '.env' });
 
 export default {
   siteMetadata: {
-    title: `Slicks Slices Tr`,
-    siteUrl: 'https://gatsby.pizza',
+    title: `Ghost Pepper Berlin`,
+    siteUrl: 'https://ghost-pepper.netlify.app/',
     description: 'The best pizza place in Berlin!',
     twitter: '@slicksSlices',
   },

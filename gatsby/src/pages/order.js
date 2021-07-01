@@ -37,7 +37,7 @@ export default function OrderPage({ data }) {
             type="text"
             name="name"
             id="name"
-            placeholder="Tom"
+            placeholder="Name"
             value={values.name}
             onChange={updateValue}
           />
@@ -46,7 +46,7 @@ export default function OrderPage({ data }) {
             type="email"
             name="email"
             id="email"
-            placeholder="tom@example.com"
+            placeholder="mail@example.com"
             value={values.email}
             onChange={updateValue}
           />
@@ -105,7 +105,7 @@ export default function OrderPage({ data }) {
             {error ? <p>Error: {error}</p> : ''}
           </div>
           <button type="submit" disabled={loading}
-          >{loading ? 'Placing order mamen' : 'Allez commande bolos'}</button>
+          >{loading ? 'Placing order' : 'Go ahead and order'}</button>
         </fieldset>
       </OrderStyles>
     </>

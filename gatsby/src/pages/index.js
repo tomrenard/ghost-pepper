@@ -8,12 +8,12 @@ function CurrentlySlicing({ slicemasters }) {
   return (
     <div>
       <h2 className="center">
-        <span className="mark tilt">slicemasters Here</span>
+        <span className="mark tilt">Ghost Masters Here</span>
       </h2>
-      <p>I'm ready to slice maboy</p>
+      <p>I'm ready to slice for you</p>
       {!slicemasters && <LoadingGrid count={4} />}
       {slicemasters && !slicemasters?.length && (
-        <p>No one working mamen</p>
+        <p>No one is working</p>
       )}
       {slicemasters?.length && <ItemGrid items={slicemasters} />}
     </div>
@@ -24,12 +24,12 @@ function HotSlices({ hotSlices }) {
   return (
     <div>
       <h2 className="center">
-        <span className="mark tilt">HotSlices mamen</span>
+        <span className="mark tilt">HotSlices</span>
       </h2>
-      <p>Oh yeah eat me magurl</p>
+      <p>Best pizzas available</p>
       {!hotSlices && <LoadingGrid count={4} />}
       {hotSlices && !hotSlices?.length && (
-        <p>No one working mamen</p>
+        <p>No one is working</p>
       )}
       {hotSlices?.length && <ItemGrid items={hotSlices} />}
     </div>

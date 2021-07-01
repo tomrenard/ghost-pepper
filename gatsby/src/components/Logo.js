@@ -67,25 +67,26 @@ const LogoStyles = styled.div`
     }
     &.l {
       --rotate: 2deg;
-      --scale: 1.4;
+      --scale: 1.1;
       --translateX: 0.05em;
-      --translateY: -0.05em;
+      --translateY: 0.2em;
     }
     &.i {
       --scale: 0.9;
-      --translateY: -0.1em;
+      --translateY: 0.1em;
       --translateX: 0.1em;
     }
     &.c {
       --rotate: 3deg;
       --scale: 0.9;
       --translateX: 0.1em;
-      --translateY: 0.23em;
+      --translateY: 0.1em;
     }
     &.k {
       --rotate: -12deg;
       --scale: 1.2;
       --translateX: 0.06em;
+      --translateY: 0.1em;
     }
     &.apos {
       --translateX: 0.1em;
@@ -102,18 +103,18 @@ export default function Logo() {
   return (
     <LogoStyles className="logo">
       <div className="inner">
-        <span className="est">EST 1994</span>
+        <span className="est">Berlin 2021</span>
         <h1>
           <span className="slicks">
-            <span className="letter S">S</span>
-            <span className="letter l">l</span>
-            <span className="letter i">i</span>
-            <span className="letter c">c</span>
-            <span className="letter k">k</span>
-            <span className="letter apos">'</span>
-            <span className="letter s">s</span>
+            <span className="letter S">G</span>
+            <span className="letter l">h</span>
+            <span className="letter i">o</span>
+            <span className="letter c">s</span>
+            <span className="letter k">t</span>
+            <span className="letter apos"></span>
+            <span className="letter s"></span>
           </span>
-          <span className="slices">slices</span>
+          <span className="slices">pepper</span>
         </h1>
       </div>
     </LogoStyles>
