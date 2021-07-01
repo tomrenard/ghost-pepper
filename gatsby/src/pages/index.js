@@ -3,6 +3,7 @@ import useLatestData from '../utils/useLatestData';
 import { HomePageGrid } from '../styles/Grids';
 import LoadingGrid from '../components/LoadingGrid';
 import ItemGrid from '../components/ItemGrid';
+import { Link } from 'gatsby';
 
 function CurrentlySlicing({ slicemasters }) {
   return (
@@ -41,7 +42,7 @@ export default function HomePage() {
   return (
     <div className="center">
       <h1>The Best Pizza in Berlin</h1>
-      <p>Open 24/7</p>
+      <Link className="home-link-beers" style={{textDecoration: "none"}} to="/beers"><p>Discover our last beers here</p></Link>
       <HomePageGrid>
         <CurrentlySlicing slicemasters={slicemasters} />
         <HotSlices hotSlices={hotSlices} />

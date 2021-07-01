@@ -72,6 +72,11 @@ const GlobalStyles = createGlobalStyle`
     position: relative;
     display: inline-block;
   }
+  .home-link-beers {
+    &:hover {
+      color: var(--red);
+    }
+  }
 `;
 
 export default GlobalStyles;

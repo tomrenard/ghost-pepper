@@ -94,6 +94,7 @@ async function turnToppingsIntoPages({ graphql, actions }) {
 async function fetchBeersAndTurnIntoNodes({ actions, createNodeId, createContentDigest }) {
   const res = await fetch('https://api.sampleapis.com/beers/ale')
   const beers = await res.json();
+  console.log(beers);
   for (const beer of beers) {
     const nodeMeta = {
       id: createNodeId(`beer-${beer.name}`),
